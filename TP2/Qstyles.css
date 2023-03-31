@@ -1,0 +1,62 @@
+body{
+    background-image: linear-gradient(to bottom right, #576182, #1FC5A8);
+}
+
+
+.singleChoice, .multipleChoice{
+    position: absolute;
+    width: 40%;
+    
+}
+.multipleChoice{
+    left: 50%;
+    
+}
+fieldset{
+    background-image: linear-gradient(to bottom right, #72B2E4, #92E1E2) ;
+    border-radius: 15px;
+}
+
+.container{
+    position: relative;
+    width:85%;
+    margin:auto;
+    
+
+}
+#submit{
+    top: 400px;
+    position: absolute;
+    left: 350px;
+    width: 100px;
+    height: 30px;
+    background-color: #052253;
+    
+}
+#reset{
+    top: 400px;
+    position: absolute;
+    right:450px;
+    width: 100px;
+    height: 30px;
+    background-color: #052253;
+}
+
+#submit:hover, #reset:hover{
+
+    background-color: #3764b0;
+}
+#submit:active, #reset:active{
+    background-color: #abbddc;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+
+}
+.checkbox:checked{
+    color: green; 
+    filter: hue-rotate(240deg)
+     } 
+
+     input[type=checkbox] {
+        cursor: pointer;
+      }
