@@ -9,7 +9,7 @@ let etudiant = [
     },
     {
         prenom: "achraf",
-        note: "12",
+        note: "19",
     },
     {
         prenom: "hamid",
