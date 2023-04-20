@@ -9,17 +9,17 @@
 <link rel="icon" type="image/x-icon" href="download.png">
 </head>
 
-<body>
+<body id="body">
 <div id="mainWrapper">
   <header> 
     
-    <div id="logo"> <!-- <img src="logoImage.png" alt="sample logo"> --> 
+    <div id="logo" >
       
       DriftShop </div>
-    <div id="headerLinks"><a href="LOGIN\login.html" title="Login/Register">Login/Register</a><a href="#" title="Cart">Cart &nbsp;</a></div>
+    <div id="headerLinks"><a id="loginlink" href="login.html" title="Login/Register">Login/Register</a><a href="#" title="Cart">Cart &nbsp;</a></div>
   </header>
   <section id="offer"> 
-    <!-- The offer section displays a banner text for promotions -->
+    
     <h2 id="hh">OFFER Season</h2>
     <p id="ff">Discounts That'll make you drift away</p>
   </section>
@@ -31,8 +31,7 @@
           <h2>Shop by Brand </h2>
           <hr>
           <ul>
-            <!-- List of links under menuset 1 -->
-            <li><a href="#" title="Link">Mazda</a></li>
+            <li><a title="Link" onclick= _Mazda()>Mazda</a></li>
             <li><a href="#" title="Link">Toyota</a></li>
             <li><a href="#" title="Link">Nissan</a></li>
             <li class="notimp"><a href="#"  title="Link">Subaru</a></li>
@@ -53,71 +52,70 @@
       </div>
     </section>
     <section class="mainContent">
-      <div class="productRow"><!-- Each product row contains info of 3 elements -->
-        <article class="productInfo"><!-- Each individual product description -->
-          <div><img alt="Nissan S-Chassis S15" src="NissanS-ChassisS15.jpg"></div>
-          <p class="price">250,000 MAD </p>
-          <p class="productContent">Nissan S-Chassis S15 Silvia </p>
+      <div class="productRow">
+        <article class="productInfo" >
+          <div><img id="img1"></div>
+          <p class="price" id="price1"></p>
+          <p class="productContent" id="Pc1"> </p>
           <input type="button" name="button" value="Buy" class="buyButton">
         </article>
-        <article class="productInfo"><!-- Each individual product description -->
-          <div><img alt="Toyota Chaser JZX100" src="ToyotaChaseJZX100r.jpg"></div>
-          <p class="price">180,000 MAD</p>
-          <p class="productContent">Toyota Chaser JZX100 Tourer V </p>
+        <article class="productInfo">
+          <div><img id="img2"></div>
+          <p class="price" id="price2"></p>
+          <p class="productContent" id="Pc2">Toyota Chaser JZX100 Tourer V </p>
           <input type="button" name="button" value="Buy" class="buyButton">
         </article>
-        <article class="productInfo"> <!-- Each individual product description -->
-          <div><img alt="Mazda RX-7" src="mazda-rx-7.jpg"></div>
-          <p class="price">350,000 MAD</p>
-          <p class="productContent">Mazda Rx-7</p>
+        <article class="productInfo"> 
+          <div><img id="img3"></div>
+          <p class="price" id="price3"></p>
+          <p class="productContent" id="Pc3"></p>
           <input type="button" name="button" value="Buy" class="buyButton">
         </article>
       </div>
       <div class="productRow"> 
-        <!-- Each product row contains info of 3 elements -->
-        <article class="productInfo"> <!-- Each individual product description -->
-          <div><img alt="Nissan Cefiro A31" src="NissanCefiro.jpg"></div>
-          <p class="price">220,000 MAD</p>
-          <p class="productContent">Nissan Cefiro A31</p>
+        <article class="productInfo"> 
+          <div><img id="img4"></div>
+          <p class="price" id="price4"></p>
+          <p class="productContent" id="Pc4"></p>
           <input type="button" name="button" value="Buy" class="buyButton">
         </article>
-        <article class="productInfo"> <!-- Each individual product description -->
-          <div><img alt="Dodge Viper SRT-10" src="Dodge_Viper_SRT-10.jpg"></div>
-          <p class="price">900,000 MAD</p>
-          <p class="productContent">Dodge Viper SRT-10</p>
+        <article class="productInfo"> 
+          <div><img id="img5"></div>
+          <p class="price" id="price5"></p>
+          <p class="productContent" id="Pc5"></p>
           <input type="button" name="button" value="Buy" class="buyButton">
         </article>
-        <article class="productInfo"><!-- Each individual product description -->
-          <div><img alt="Mercedes Benz class CLK" src="MercedecBenzCLK.jpg"></div>
-          <p class="price">750,000 MAD</p>
-          <p class="productContent">Mercedes Benz class CLK</p>
+        <article class="productInfo">
+          <div><img id="img6"></div>
+          <p class="price" id="price6"></p>
+          <p class="productContent" id="Pc6"></p>
           <input type="button" name="button" value="Buy" class="buyButton">
         </article>
       </div>
       <div class="productRow">
-        <article class="productInfo"> <!-- Each individual product description -->
-          <div><img alt="Subaru Impreza WRX STI " src="Subaru-WRX-STI-Type-R.jpg"></div>
-          <p class="price">340,000 MAD</p>
-          <p class="productContent">Subaru Impreza WRX STI</p>
+        <article class="productInfo">
+          <div><img id="img7"></div>
+          <p class="price" id="price7"></p>
+          <p class="productContent" id="Pc7"></p>
           <input type="button" name="button" value="Buy" class="buyButton">
         </article>
-        <article class="productInfo"><!-- Each individual product description -->
-          <div><img alt="Volkswagen GOLF mk8" src="volkswagen-golf8.jpg"></div>
-          <p class="price">500,000 MAD</p>
-          <p class="productContent">Volkswagen GOLF mk8</p>
+        <article class="productInfo">
+          <div><img id="img8"></div>
+          <p class="price" id="price8"></p>
+          <p class="productContent" id="Pc8"></p>
           <input type="button" name="button" value="Buy" class="buyButton">
         </article>
-        <article class="productInfo"><!-- Each individual product description -->
-          <div><img alt="BMW M5 E39" src="BMWM5-E39.jpg"></div>
-          <p class="price">450,000 MAD</p>
-          <p class="productContent">BMW M5 E39</p>
+        <article class="productInfo">
+          <div><img id="img9"></div>
+          <p class="price" id="price9"></p>
+          <p class="productContent" id="Pc9"></p>
           <input type="button" name="button" value="Buy" class="buyButton">
         </article>
       </div>
     </section>
   </div>
   <footer> 
-    <!-- This is the footer with default 3 divs -->
+    
     <div>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam varius sem neque. Integer ornare.</p>
     </div>
@@ -131,5 +129,6 @@
     </div>
   </footer>
 </div>
+<script src="code.js"></script>
 </body>
 </html>
