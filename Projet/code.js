@@ -95,9 +95,59 @@ var Mazda=[
 
 
 ];
+
+var Toyota=[
+    {
+        image : "ToyotaChaseJZX100r.jpg",
+        name : "Toyota Chaser JZX100 Tourer V ",
+        price: "250,000 MAD",
+    },
+    {
+        image : "Toyota-Celica-GT2000-Liftback.jpg",
+        name : "Toyota Celica GT2000 Liftback",
+        price: "400.000 MAD",
+    },
+    {
+        image : "Toyota-Celica-Supra.jpg",
+        name : "Toyota Celica Supra",
+        price: "200,000 MAD",
+    },
+    {
+        image : "Toyota-Corolla-AE86.jpg",
+        name : "Toyota Corolla AE86",
+        price: "150,000 MAD",
+    },
+    {
+        image : "Toyota-Soarer-Turbo.jpg",
+        name : "Toyota Soarer Turbo MK 3",
+        price: "150,000 MAD",
+    },
+    {
+        image : "Toyota-MR-S.jpg",
+        name : "Toyota MR-S",
+        price: "250,000 MAD",
+    },
+    {
+        image : "Toyota-Mk4-Supra.jpg",
+        name : "Toyota Mk4 Supra",
+        price: "200,000 MAD",
+    },
+    {
+        image : "Toyota-GT86.jpg",
+        name : "Toyota GT86",
+        price: "390,000 MAD",
+    },
+    {
+        image : "Toyota-GR86.jpg",
+        name : "Toyota GR86",
+        price: "450,000 MAD",
+    }
+    ];
+
+
 function _Mazda() {
     for (let index = 1; index <= 9; index++) {
-        console.log(car[index-1].price);
+        
         document.getElementById("img"+index).src = Mazda[index-1].image;
         document.getElementById("img"+index).alt = Mazda[index-1].name;
         document.getElementById("price"+index).innerHTML = Mazda[index-1].price;
@@ -105,6 +155,18 @@ function _Mazda() {
     }
     
 }
+function _Toyota() {
+    document.getElementById("offer").style.backgroundImage = "url('toyota2.jpg')"
+    for (let index = 1; index <= 9; index++) {
+        
+        document.getElementById("img"+index).src = Toyota[index-1].image;
+        document.getElementById("img"+index).alt = Toyota[index-1].name;
+        document.getElementById("price"+index).innerHTML = Toyota[index-1].price;
+        document.getElementById("Pc"+index).innerHTML = Toyota[index-1].name;
+    }
+    
+}
+
 
 
 for (let index = 1; index <= 9; index++) {
