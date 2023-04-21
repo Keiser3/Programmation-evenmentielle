@@ -144,6 +144,53 @@ var Toyota=[
     }
     ];
 
+    var Nissan=[
+        {
+            image : "Nissan-240RS.jpg",
+            name : "Nissan Silvia 240RS",
+            price: "220,000 MAD",
+        },
+        {
+            image : "Nissan-Pulsar-GTI-R.jpg",
+            name : "Nissan Pulsar GTI-R",
+            price: "280.000 MAD",
+        },
+        {
+            image : "Nissan-Silvia-NISMO-270R.jpg",
+            name : "Nissan Silvia NISMO 270R",
+            price: "290,000 MAD",
+        },
+        {
+            image : "Nissan-350Z.jpg",
+            name : "Nissan 350Z",
+            price: "380,000 MAD",
+        },
+        {
+            image : "NissanS-ChassisS15.jpg",
+            name : "Nissan S-Chassis S15 Silvia ",
+            price: "180.000 MAD",
+        },
+        {
+            image : "Nissan-Silvia-Spec-R-Aero.jpg",
+            name : "Nissan Silvia Spec R Aero",
+            price: "250,000 MAD",
+        },
+        {
+            image : "NissanCefiro.jpg",
+            name : "Nissan Cefiro A31 ",
+            price: "220,000 MAD", 
+        },
+        {
+            image : "Nissan-Skyline-2000GT-R.jpg",
+            name : "Nissan Skyline 2000GT-R",
+            price: "390,000 MAD",
+        },
+        {
+            image : "Nissan-Stagea-Autech-260RS.jpg",
+            name : "Nissan Stagea Autech 260RS",
+            price: "370,000 MAD",
+        }
+        ];
 
 function _Mazda() {
     for (let index = 1; index <= 9; index++) {
@@ -163,6 +210,16 @@ function _Toyota() {
         document.getElementById("img"+index).alt = Toyota[index-1].name;
         document.getElementById("price"+index).innerHTML = Toyota[index-1].price;
         document.getElementById("Pc"+index).innerHTML = Toyota[index-1].name;
+    }
+    
+}
+function _Nissan() {
+    for (let index = 1; index <= 9; index++) {
+        
+        document.getElementById("img"+index).src = Nissan[index-1].image;
+        document.getElementById("img"+index).alt = Nissan[index-1].name;
+        document.getElementById("price"+index).innerHTML = Nissan[index-1].price;
+        document.getElementById("Pc"+index).innerHTML = Nissan[index-1].name;
     }
     
 }
