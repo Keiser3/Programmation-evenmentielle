@@ -191,7 +191,60 @@ var Toyota=[
             price: "370,000 MAD",
         }
         ];
-
+    var Subaru=[
+            {
+                image : "Subaru-Impreza-WR1.jpg",
+                name : "Subaru Impreza WR1 ",
+                price: "200,000 MAD",
+            },
+            {
+                image : "Subaru-SVX.jpg",
+                name : "Subaru SVX",
+                price: "197.000 MAD",
+            },
+            {
+                image : "Subaru-Brat.jpg",
+                name : "Subaru Brat ",
+                price: "469,000 MAD",
+            },
+            {
+                image : "Subaru-Impreza-RB320.jpg",
+                name : "Subaru Impreza RB320",
+                price: "263,000 MAD",
+            },
+            {
+                image : "Subaru-BRZ-TS.jpg",
+                name : "Subaru BRZ TS",
+                price: "725,000 MAD",
+            },
+            {
+                image : "Subaru-Impreza-STI-CS400-Cosworth.jpg",
+                name : "Subaru Impreza STI CS400 Cosworth",
+                price: "329,000 MAD",
+            },
+            {
+                image : "Subaru-WRX-STI-Type-R.jpg",
+                name : "Subaru Impreza WRX STI",
+                price: "340,000 MAD",
+            },
+            {
+                image : "Subaru-Impreza-555-WRC.jpg",
+                name : "Subaru Impreza 555 WRC",
+                price: "460,000 MAD",
+            },
+            {
+                image : "Forester-STI.jpg",
+                name : "Subaru Forester STI",
+                price: "199,500 MAD",
+            }
+            ];
+var temp={
+        image:"",
+        name:"",
+        price:"",
+    };
+var cart = [
+];
 function _Mazda() {
     for (let index = 1; index <= 9; index++) {
         
@@ -223,14 +276,89 @@ function _Nissan() {
     }
     
 }
-
+function _Subaru() {
+    for (let index = 1; index <= 9; index++) {
+        
+        document.getElementById("img"+index).src = Subaru[index-1].image;
+        document.getElementById("img"+index).alt = Subaru[index-1].name;
+        document.getElementById("price"+index).innerHTML = Subaru[index-1].price;
+        document.getElementById("Pc"+index).innerHTML = Subaru[index-1].name;
+    }
+    
+}
 
 
 for (let index = 1; index <= 9; index++) {
     console.log(car[index-1].price);
-
+    console.log(car[index-1].image);
     document.getElementById("img"+index).src = car[index-1].image;
     document.getElementById("img"+index).alt = car[index-1].name;
     document.getElementById("price"+index).innerHTML = car[index-1].price;
     document.getElementById("Pc"+index).innerHTML = car[index-1].name;
+}
+function AddToCart(indexOfProduct) {
+    temp.image = document.getElementById("img"+indexOfProduct).src;
+    temp.name = document.getElementById("Pc"+indexOfProduct).innerHTML;
+    temp.price = document.getElementById("price"+indexOfProduct).innerHTML;
+    
+    cart.push(temp);
+
+}
+function _cart() {
+    for (let i = 0; i < cart.length; i++) {
+        
+          
+        var item = document.createElement("div");
+        item.className = "item";
+        document.getElementById("items").appendChild(item);
+        var imbox = document.createElement("div");
+        imbox.className = "image-box"
+        item.appendChild(imbox);
+        var image = document.createElement("img");
+        image.style = "height:120px; width: 120px;"
+        image.src = cart[index].image;
+        imbox.appendChild(image);
+        var info = document.createElement("div");
+        info.className = "about";
+        item.appendChild(info);
+        var title = document.createElement("h1");
+        title.className = "title";
+        title.innerHTML = cart[index].name;
+        info.appendChild(title);
+        var subtitle = document.createElement("h3");
+        subtitle.className = "subtitle";
+        info.appendChild(subtitle);
+        var counter = document.createElement("div");
+        counter.className = "counter";
+        item.appendChild(counter);
+        var btn1 = document.createElement("div");
+        btn1.className = "btn";
+        btn1.innerHTML = "+"
+        counter.appendChild(btn1);
+        var count = document.createElement("div");
+        count.className = "count";
+        count.innerHTML = "1";
+        counter.appendChild(count);
+        var btn2 = document.createElement("div");
+        btn2.className = "btn";
+        btn2.innerHTML = "-";
+        counter.appendChild(btn2);
+        var prices = document.createElement("div");
+        prices.className = "prices";
+        item.appendChild(prices);
+        var amount = document.createElement("div");
+        amount.className = "amount";
+        amount.innerHTML = cart[index].price;
+        prices.appendChild(amount);
+        var save = document.createElement("div");
+        save.className = "save";
+        save.innerHTML = "Save";
+        prices.appendChild(save);
+        var remove = document.createElement("div");
+        remove.className = "remove";
+        remove.innerHTML = "remove";
+        prices.appendChild(remove);
+         
+        
+    }
 }
