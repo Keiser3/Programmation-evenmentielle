@@ -359,6 +359,6 @@ function _cart() {
         remove.innerHTML = "remove";
         prices.appendChild(remove);
          
-        
+         
     }
 }
