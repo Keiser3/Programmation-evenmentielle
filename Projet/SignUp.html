@@ -12,9 +12,9 @@
 
 <div id="login-form-wrap">
   <h2>Sign-up</h2>
-  <form id="login-form">
+  <form id="login-form" onsubmit="add()">
     <p>
-        <input type="text" id="Firstname" name="Firstname" placeholder="Firstname" required><i class="validation"><span></span><span></span></i>
+      <input type="text" id="Firstname" name="Firstname" placeholder="Firstname" required><i class="validation"><span></span><span></span></i>
     </p>
     <p>
     <input type="text" id="Lastname" name="Lastname" placeholder="Lastname" required><i class="validation"><span></span><span></span></i>
@@ -25,6 +25,7 @@
     <p>
         <input type="password" id="password" name="password" placeholder="password" required><i class="validation"><span></span><span></span></i>
     </p>
+    <span id="s1" style="color : red;"></span><br>
     <p>
         <input type="password" id="passwordR" name="passwordR" placeholder="Retype Password" required><i class="validation"><span></span><span></span></i>
     </p>
@@ -35,6 +36,5 @@
  
 </div>
 <script src="code.js"></script>
-  
 </body>
 </html>

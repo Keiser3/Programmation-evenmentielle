@@ -245,6 +245,14 @@ var temp={
     };
 var cart = [
 ];
+var Users = [
+    {
+        Firstname : "Ayman",
+        Lastname  : "Benrabiaa",
+        Email     : "Aymanbenr@protonmail.com",
+        Password  : "$GetReCkt20!&",
+    },
+]
 function _Mazda() {
     for (let index = 1; index <= 9; index++) {
         
@@ -307,58 +315,75 @@ function AddToCart(indexOfProduct) {
 function _cart() {
     for (let i = 0; i < cart.length; i++) {
         
-          
-        var item = document.createElement("div");
+        var container = document.getElementsByClassName('Cart-Container')[0]
+        var item = document.createElement('div');
         item.className = "item";
         document.getElementById("items").appendChild(item);
-        var imbox = document.createElement("div");
+        var imbox = document.createElement('div');
         imbox.className = "image-box"
         item.appendChild(imbox);
-        var image = document.createElement("img");
+        var image = document.createElement('img');
         image.style = "height:120px; width: 120px;"
         image.src = cart[index].image;
         imbox.appendChild(image);
-        var info = document.createElement("div");
+        var info = document.createElement('div');
         info.className = "about";
         item.appendChild(info);
-        var title = document.createElement("h1");
+        var title = document.createElement('h1');
         title.className = "title";
         title.innerHTML = cart[index].name;
         info.appendChild(title);
-        var subtitle = document.createElement("h3");
+        var subtitle = document.createElement('h3');
         subtitle.className = "subtitle";
         info.appendChild(subtitle);
-        var counter = document.createElement("div");
+        var counter = document.createElement('div');
         counter.className = "counter";
         item.appendChild(counter);
-        var btn1 = document.createElement("div");
+        var btn1 = document.createElement('div');
         btn1.className = "btn";
         btn1.innerHTML = "+"
         counter.appendChild(btn1);
-        var count = document.createElement("div");
+        var count = document.createElement('div');
         count.className = "count";
         count.innerHTML = "1";
         counter.appendChild(count);
-        var btn2 = document.createElement("div");
+        var btn2 = document.createElement('div');
         btn2.className = "btn";
         btn2.innerHTML = "-";
         counter.appendChild(btn2);
-        var prices = document.createElement("div");
+        var prices = document.createElement('div');
         prices.className = "prices";
         item.appendChild(prices);
-        var amount = document.createElement("div");
+        var amount = document.createElement('div');
         amount.className = "amount";
         amount.innerHTML = cart[index].price;
         prices.appendChild(amount);
-        var save = document.createElement("div");
+        var save = document.createElement('div');
         save.className = "save";
         save.innerHTML = "Save";
         prices.appendChild(save);
-        var remove = document.createElement("div");
+        var remove = document.createElement('div');
         remove.className = "remove";
         remove.innerHTML = "remove";
-        prices.appendChild(remove);
-         
-         
+        prices.appendChild(remove);     
+    }
+}
+function add() {
+    Firstname = document.getElementById("Firstname").value;
+    Lastname = document.getElementById("Lastname").value;
+    Email = document.getElementById("Email").value;
+    Password = document.getElementById("Password").value;
+    PasswordR = document.getElementById("PasswordR").value;
+    if(Password != PasswordR){
+        document.getElementById("s1").innerHTML = "Passwords do not match";
+    }
+    else{
+       var user = {};
+       user.Firstname = Firstname;
+       user.Lastname = Lastname;
+       user.Email   = Email;
+       user.Password = Password;
+       Users.push(user);
+       console.log(Users);
     }
 }
