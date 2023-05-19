@@ -245,14 +245,7 @@ var temp={
     };
 var cart = [
 ];
-var Users = [
-    {
-        Firstname : "Ayman",
-        Lastname  : "Benrabiaa",
-        Email     : "Aymanbenr@protonmail.com",
-        Password  : "$GetReCkt20!&",
-    },
-]
+
 function _Mazda() {
     for (let index = 1; index <= 9; index++) {
         
@@ -264,7 +257,7 @@ function _Mazda() {
     
 }
 function _Toyota() {
-    document.getElementById("offer").style.backgroundImage = "url('toyota2.jpg')"
+    document.getElementById("offer").style.backgroundImage = "url('toyota2.jpg')";
     for (let index = 1; index <= 9; index++) {
         
         document.getElementById("img"+index).src = Toyota[index-1].image;
@@ -296,14 +289,7 @@ function _Subaru() {
 }
 
 
-for (let index = 1; index <= 9; index++) {
-    console.log(car[index-1].price);
-    console.log(car[index-1].image);
-    document.getElementById("img"+index).src = car[index-1].image;
-    document.getElementById("img"+index).alt = car[index-1].name;
-    document.getElementById("price"+index).innerHTML = car[index-1].price;
-    document.getElementById("Pc"+index).innerHTML = car[index-1].name;
-}
+
 function AddToCart(indexOfProduct) {
     temp.image = document.getElementById("img"+indexOfProduct).src;
     temp.name = document.getElementById("Pc"+indexOfProduct).innerHTML;
@@ -368,22 +354,11 @@ function _cart() {
         prices.appendChild(remove);     
     }
 }
-function add() {
-    Firstname = document.getElementById("Firstname").value;
-    Lastname = document.getElementById("Lastname").value;
-    Email = document.getElementById("Email").value;
-    Password = document.getElementById("Password").value;
-    PasswordR = document.getElementById("PasswordR").value;
-    if(Password != PasswordR){
-        document.getElementById("s1").innerHTML = "Passwords do not match";
-    }
-    else{
-       var user = {};
-       user.Firstname = Firstname;
-       user.Lastname = Lastname;
-       user.Email   = Email;
-       user.Password = Password;
-       Users.push(user);
-       console.log(Users);
-    }
+
+for (let index = 1; index <= 9; index++) {
+
+    document.getElementById("img"+index).src = car[index-1].image;
+    document.getElementById("img"+index).alt = car[index-1].name;
+    document.getElementById("price"+index).innerHTML = car[index-1].price;
+    document.getElementById("Pc"+index).innerHTML = car[index-1].name;
 }

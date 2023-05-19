@@ -7,9 +7,6 @@ var Users=[
 
 
 function add() {
-    
-    
-    
     username = document.getElementById("in1").value;
     password = document.getElementById("in2").value;
     if(password.length < 8){
@@ -20,7 +17,6 @@ function add() {
        user.username = username;
        user.password = password;
        Users.push(user);
-
        console.log(Users);
     }
       

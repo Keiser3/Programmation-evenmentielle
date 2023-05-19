@@ -3,24 +3,17 @@
 body{
 	background-image: url(Background4.jpg);
 	background-size: auto;
-	
 }
 a:hover {
 	color: rgba(255,255,255,1.00);
 }
-
-
 header {
 	font-family: 'Montserrat', sans-serif;
 	color: rgb(100, 96, 96);
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 400;
-	
-	
 }
-
-
 #logo {
 	font-family: 'Graffiti font', sans-serif;
 	float: left;
@@ -32,8 +25,6 @@ header {
 	font-weight: 900;
 	
 }
-
-
 #headerLinks {
 	float: left;
 	width: calc( 100% - 145px );
@@ -45,14 +36,12 @@ header {
 	opacity: 0.5;
 	border-radius: 15px;
 }
-
 #headerLinks a {
 	text-decoration: none;
 	color: rgba(146,146,146,1.00);
 	padding-left: 66px;
 	font-size: 14px;
 }
-
 #offer {
 	font-family: 'Graffiti font', sans-serif;
 	clear: both;
@@ -70,13 +59,11 @@ header {
 	height: 200px;
 
 }
-
 #content {
 	clear: both;
 	overflow: auto;
 	padding-top: 29px;
 }
-
 #content .sidebar {
 	font-family: 'Montserrat', sans-serif;
 	color: rgb(97, 93, 93);
@@ -116,7 +103,6 @@ header {
 	text-align: center;
 	color: rgba(208,207,207,1.00);
 	font-size: 14px;
-	;
 	margin-bottom: 21px;
 }
 

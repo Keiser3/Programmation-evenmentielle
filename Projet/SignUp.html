@@ -6,13 +6,11 @@
 <link rel="stylesheet" href="./SignUpStyle.css">
 <link href="https://fonts.cdnfonts.com/css/graffiti-font" rel="stylesheet">
 <link rel="icon" type="image/x-icon" href="download.png">
-
 </head>
 <body>
-
 <div id="login-form-wrap">
   <h2>Sign-up</h2>
-  <form id="login-form" onsubmit="add()">
+  <form id="login-form" action="index.html" onsubmit=" add()" >
     <p>
       <input type="text" id="Firstname" name="Firstname" placeholder="Firstname" required><i class="validation"><span></span><span></span></i>
     </p>
@@ -30,11 +28,10 @@
         <input type="password" id="passwordR" name="passwordR" placeholder="Retype Password" required><i class="validation"><span></span><span></span></i>
     </p>
     <p>
-    <input type="submit" id="Create" value="Sign-up"  formaction="index.html" >
+    <input type="submit" id="Create" value="Sign-up"   >
     </p>
   </form>
- 
 </div>
-<script src="code.js"></script>
+<script src="SignUpCode.js"></script>
 </body>
 </html>
