@@ -1,0 +1,61 @@
+
+body {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+a:link { text-decoration: none;color: #FEFEFE;}
+a:visited { text-decoration: none; color: #FEFEFE;}
+a:hover { text-decoration: none;color: #FEFEFE; }
+a:active { text-decoration: none;color: #FEFEFE; }
+#link{
+    position: relative;
+    top: 0;
+    left:45%;
+    right:45%;
+    text-decoration: none;
+    width: 10%;
+    background-color: #354eb1;
+    text-align: center;
+}
+#one {
+    position: absolute;
+    border-style: solid;
+    border-width: 5px;
+    border-color: blue;
+    margin: 5px;
+    padding: 5px;
+    width: 25%;
+    right: 0;
+}
+#two {
+    position: absolute;
+    border-style: solid;
+    border-width: 5px;
+    border-color: green;
+    margin: 5px;
+    padding: 5px;
+    width: 25%;
+    right: 0;
+    top: 50%;
+    position: sticky ;
+}
+#three {
+    position: absolute;
+    border-style: solid;
+    border-width: 5px;
+    border-color: orange;
+    margin: 5px;
+    padding: 5px;
+    width: 25%;
+    left: 0;
+    position: sticky ;
+}
+#four {
+    position: absolute;
+    border-style: solid;
+    border-width: 5px;
+    border-color: yellow;
+    margin: 5px;
+    padding: 5px;
+    width: 25%;
+    top: 50%;
+    left: 0;
+    position: sticky ;
+}

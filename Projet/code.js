@@ -248,13 +248,11 @@ var cart = [
 
 function _Mazda() {
     for (let index = 1; index <= 9; index++) {
-        
         document.getElementById("img"+index).src = Mazda[index-1].image;
         document.getElementById("img"+index).alt = Mazda[index-1].name;
         document.getElementById("price"+index).innerHTML = Mazda[index-1].price;
         document.getElementById("Pc"+index).innerHTML = Mazda[index-1].name;
     }
-    
 }
 function _Toyota() {
     document.getElementById("offer").style.backgroundImage = "url('toyota2.jpg')";
